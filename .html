@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Unique Abhushan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8e1;
+      color: #3e2723;
+    }
+    header {
+      background-color: #d4af37;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background: #fbeec1;
+    }
+    nav button {
+      padding: 0.5rem 1rem;
+      background-color: #d4af37;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #d4af37;
+    }
+    footer {
+      text-align: center;
+      background: #d4af37;
+      color: white;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    The Unique Abhushan
+  </header>
+  <nav>
+    <div>Home | Gallery | Contact</div>
+    <div>
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('hi')">Hindi</button>
+    </div>
+  </nav>
+  <section class="gallery">
+    <img src="https://via.placeholder.com/200x200?text=Jewellery+1" alt="Jewellery 1" />
+    <img src="https://via.placeholder.com/200x200?text=Jewellery+2" alt="Jewellery 2" />
+    <img src="https://via.placeholder.com/200x200?text=Jewellery+3" alt="Jewellery 3" />
+    <img src="https://via.placeholder.com/200x200?text=Jewellery+4" alt="Jewellery 4" />
+  </section>
+  <footer>
+    &copy; 2025 The Unique Abhushan. All Rights Reserved.
+  </footer>  <script>
+    function setLanguage(lang) {
+      if(lang === 'hi') {
+        document.querySelector('header').innerText = 'द यूनिक आभूषण';
+        document.querySelector('nav div').innerText = 'होम | गैलरी | संपर्क';
+      } else {
+        document.querySelector('header').innerText = 'The Unique Abhushan';
+        document.querySelector('nav div').innerText = 'Home | Gallery | Contact';
+      }
+    }
+  </script></body>
+</html>
